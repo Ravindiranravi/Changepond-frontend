@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body
+         {
+            border: 2px solid lightseagreen;
+         }
+
+         .textarea
+         {
+            width: 200px;
+            height: 100px;
+         }
+
+         .formbox
+         {
+            display: inline;
+         }
+    </style>
+</head>
+<body>
+    <div class="textarea">
+         <textarea name=" display-text" id="display-text"></textarea>
+         <button type="button" id="replace-button" onclick="replace()">Replace</button>&nbsp;&nbsp;
+         <button type="button" id="replaceall-button" onclick="replaceall()">Replace All</button>&nbsp;&nbsp;
+         
+
+    </div>
+    <div class="formbox">
+                 
+           <input type="text" id="input1"><br>
+           <input type="text" id="input2"><br>
+            
+     </div>
+     <script>
+        let display_test =document.getElementById("display-text");
+        let replace_button =document.getElementById("replace-button");
+        let replaceall_button =document.getElementById("replaceall-button");
+        let input1_test =document.getElementById("input1");
+        let input2_test =document.getElementById("input2");
+
+     </script>
+</body>
+
+</html>

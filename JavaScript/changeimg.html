@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <img id="i1" src="../Assets/Images/monkey.jfif" alt="Monkey">
+    <h4  id="i2" >Monkey</h4>
+    <button type="submit" onclick="change()">Change image</button>
+
+    <script>
+        let value=true;
+        function change()
+        {
+        if(value==true)
+        {    
+            value=false;
+            document.getElementById("i1").src="../Assets/Images/dog.jfif";
+            document.getElementById("i2").innerHTML="dog";
+        }
+        else
+        {
+                
+            value=true;
+            document.getElementById("i1").src="../Assets/Images/monkey.jfif";
+            document.getElementById("i2").innerHTML="Monkey";
+        
+        }
+    }
+    </script>
+</body>
+</html>

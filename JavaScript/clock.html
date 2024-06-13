@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            border: 2px solid rgb(6, 37, 141);
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+    background-color: turquoise;
+        }
+        #d1
+        {    
+            
+            text-align: center;
+            padding: 45px 28px;
+            width: 104px;
+            height: 116px;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+            <h3 id="d1"></h3>
+        </div>
+    </center>
+    <script>
+
+        function clock()
+        {    let time = new Date();
+            document.getElementById("d1").innerHTML = time.toLocaleTimeString();
+        }
+        setInterval(clock,1000);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Form</h3>
+  
+    <form method="post">
+    <label for="fname">Enter your Name</label>
+    <input type="text" name="fname"   id="fname" placeholder="Name" min="3" maxlength="20" pattern=" ^{a-z}{3,20}$" required>
+    <br><br>
+    
+    <label for="upass">Enetr the Password</label>
+    <input type="password" name="pass" id="upass"pattern=" ^{a-zA-Z }[3,10]$" required>
+    <br><br>
+    
+    <label for="email">Enter the Mail iD</label>
+    <input type="email" name="mail" id="email" required>
+    <br><br>
+
+    <label for="tele">Enter your Tele Number</label>
+    <input type="tel" name="phone" id="tel" pattern="[0-9]{9,11}$" required>
+    <br><br>
+    
+    <label for="dob">Enter your Date of Birth</label>
+    <input type="date" name="calender" id="dob" required>
+    <br><br>
+    
+    <label for="age">Enter Your Age</label>
+    <input type="number" name="age" id="age" min="18" maxlength="60" required>
+    <br><br>
+
+    <label for="time">Enter the time</label>
+    <input type="time" name="time" id="time">
+    <br><br>
+
+    <label for="">Enter your gender</label>
+    <input type="radio" name="gender" required> Male
+    <input type="radio" name="gender" required>Female
+    <input type="radio" name="gender" required>Trans
+    <br> <br>
+
+    <label for="check">Enter your Eduction</label>
+    <input type="checkbox" name="check" id="check" required>UG
+    <input type="checkbox" name="check" id="check" required>12
+    <input type="checkbox" name="check" id="check" required>10
+     <br><br>
+
+
+     <label for="course">Enter your Course</label>
+     <select name="course" id="course" required>
+     <option value="">Select Course</option>
+     <option value="react">React</option>
+     <option value="angular">Angular</option>
+     <option value="python">Python</option>
+     </select>
+    <br><br>
+     <button type="submit">Submit</button>
+   </form> 
+</body>
+</html>

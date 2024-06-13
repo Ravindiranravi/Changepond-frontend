@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let msg = "        hello             ";
+        document.write(msg);
+        console.log(msg);
+        console.log(msg.trim());
+        console.log(msg.trimStart());
+        console.log(msg.trimEnd());
+
+        let courses = ["React","Angular","Java","Python","Nodejs"]
+        // 1. forEach(): it call another method once for each array.it works only in array data
+                courses.forEach((val,index)=>{
+                    document.write(val+" ");
+                });
+                document.write("<br>")
+                //let
+                let num=[1,2,5,6,7,8,9,11,12,14,15,16,18,19,20,21,23,25,26,27,29,30 ] 
+            
+                let filter = num.filter((val,index)=>{return val %2===0;});
+
+                document.write(filter,"<br>")
+
+                let filterE = num.every((val,index)=>{return val < 2;});
+
+                document.write(filterE,"<br>")
+    </script>
+</body>
+</html>

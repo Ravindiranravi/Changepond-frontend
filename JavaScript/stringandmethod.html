@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+    <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    <div id="d16"></div>
+    <div id="d17"></div>
+    <div id="d18"></div>
+    <div id="d19"></div>
+    <div id="d20"></div>
+    <script>
+        let  msg = "I welcome you all to this Palace"
+        document.getElementById("d1").innerHTML=msg;
+        document.getElementById("d2").innerHTML=msg.toLocaleUpperCase();
+        document.getElementById("d3").innerHTML=msg.toLocaleLowerCase();
+        document.getElementById("d4").innerHTML=msg.length;
+        
+        
+        //use of index method
+        document.getElementById("d5").innerHTML=msg.indexOf("Palace");
+        document.getElementById("d6").innerHTML=msg.indexOf("Palace",10);
+        document.getElementById("d7").innerHTML=msg.indexOf("palace"); 
+        
+        //use of lastIndexOf method
+        document.getElementById("d8").innerHTML=`msg.lastIndexOf("all"): ${msg.lastIndexOf("all")}`; 
+        document.getElementById("d9").innerHTML=`msg.lastIndexOf("all"): ${msg.lastIndexOf("all,15")}`; 
+        document.getElementById("d10").innerHTML=`msg.lastIndexOf("all"): ${msg.lastIndexOf("All,15")}`; 
+       console.log(msg.split(" "));
+
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="">Enter your name</label>
+        <input type="text" name="id" id="userid" onblur="checkData()"><br>
+        <span id="uiderror"></span><br>
+        <label for="">Enter Password</label>
+        <input type="password" name=" userpass" id="upass" onblur="checkPass()"><br>
+        <span id="upasser"></span><br>
+        <label for="">Enter your Gmail</label>
+        <input type="password" name=" userpass" id="upass" onblur="checkPass()"><br>
+        <span id="upasser"></span><br>
+        <label for="">Enter your Contact</label>
+        <input type="password" name=" userpass" id="upass" onblur="checkPass()"><br>
+        <span id="upasser"></span><br>
+        <label for="">Enter your gender</label><br>
+        <input type="radio" onblur="checkPass()">Male
+        <input type="radio" onblur="checkPass()">Female
+        <br>
+        <span id="upasser"></span><br>
+        <label for="">Select your Qualification</label>
+        <input type="checkbox" onblur="checkqual()">BE
+        <input type="checkbox" onblur="checkqual()">BTech
+        <input type="checkbox" onblur="checkqual()">MBBS
+        <input type="checkbox" onblur="checkqual()">BDS
+        <input type="checkbox " onblur="checkqual()">BSc
+        <span id="upasser"></span><br>
+        <button type="button"> Submit</button>
+    </form>
+    <script>
+
+        function checkData() {
+
+
+            let uid = document.getElementById("userid").value;
+            if (uid.trim() === "") 
+            {
+                document.getElementById("uiderror").innerHTML = "User id is required";
+                document.getElementById("uiderror").style.color = "red";
+
+            }
+
+            else if (!uid.trim().match(`^[a-zA-Z]{3,15}$`)) 
+            {
+                document.getElementById("uiderror").innerHTML = "User id is required";
+                document.getElementById("uiderror").style.color = "red";
+
+             }
+        }
+      function checkPass()
+            {
+                let upass = document.getElementById("upass").value;
+            if (upass.trim() === "") 
+            {
+                document.getElementById("upasser").innerHTML = "Password is required";
+                document.getElementById("upasser").style.color = "red";
+
+            }
+
+            else if (!upass.trim().match(`^[a-zA-Z]{3,15}$`)) 
+            {
+                document.getElementById("upasser").innerHTML = "Password is required";
+                document.getElementById("upasser").style.color = "red";
+
+             }
+    
+            }
+    </script>
+</body>
+
+</html>

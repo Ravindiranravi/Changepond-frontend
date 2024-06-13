@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="i1" src="../Assets/Images/monkey.jfif" alt="Monkey">
+    <h4  id="i2" >Monkey</h4>
+    <button type="submit" onclick="change1()">Parrot</button>
+    <button type="submit" onclick="change2()">Rabbit</button>
+    <button type="submit" onclick="change3()">Cat</button>
+    <button type="submit" onclick="change4()">Tiger</button>
+    <button type="submit" onclick="change5()">dog</button>
+    
+
+    <script>
+        
+
+        function change1()
+        {
+            document.getElementById("i1").src="../Assets/Images/parrot.jfif";
+            document.getElementById("i2").innerHTML="Parrot";
+        }
+
+        function change2()
+        {
+            document.getElementById("i1").src="../Assets/Images/rabbit.jfif";
+            document.getElementById("i2").innerHTML="Rabbit";
+        }
+
+        function change3()
+        {
+            document.getElementById("i1").src="../Assets/Images/cats.jfif";
+            document.getElementById("i2").innerHTML="Cat";
+        }
+
+        function change4()
+        {
+            document.getElementById("i1").src="../Assets/Images/tiger.jfif";
+            document.getElementById("i2").innerHTML="Tiger";
+        }
+        
+        function change5()
+        {
+            document.getElementById("i1").src="../Assets/Images/dog.jfif";
+            document.getElementById("i2").innerHTML="dog";
+        }
+    </script>
+</body>
+</html>

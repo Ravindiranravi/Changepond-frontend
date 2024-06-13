@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            //merging an array using concat method
+
+            let frontend=["HTML","Css","JavaScript","Array"];
+            let backend =["Java","Python","Nodejs"];
+            console.log(frontend);
+            console.log(backend);
+            let fullstack = frontend.concat(backend,"Angular");
+            console.log(fullstack);
+            
+            //merging an array using spread method
+
+            let boys =["Raj","Mani","Guru","Muvnden"];
+            let girls =["Gayu","Moni","Jesi"];
+            console.log(boys);
+            console.log(girls);
+            let students = [...boys,...girls];
+            console.log(students);
+    </script>
+</body>
+</html>
